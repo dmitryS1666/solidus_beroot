@@ -1,24 +1,32 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Это приложение построено на Solidus.
 
-Things you may want to cover:
+## Локальный запуск
 
-* Ruby version
+```
+bundle install
+yarn install
+rails db:create db:migrate db:seed
+```
 
-* System dependencies
+Приложение доступно http://localhost:3000.
+Административная консоль доступна по адресу http://localhost:3000/admin/.
+* admin@example.com / test123
+## Реализовано
 
-* Configuration
+* Настроена Административная консоль - АК
+* Создание/редактирование/просмотр и удаление КАТАЛОГА (АК)
+* Создание/редактирование/просмотр и удаление ПРОДУКТОВ (АК)
+* Базовое редактирование ОСНОВНОЙ ТЕМЫ
+* Работа с КОРЗИНОЙ (добавление/изменение/удаление ПРОДУКТОВ)
+* Оформление заказа
 
-* Database creation
+## В процессе
 
-* Database initialization
+* Создание ЛИЧНОГО КАБИНЕТА ПОЛЬЗОВАТЕЛЯ
+* Более глубокая настройка ОСНОВНОЙ ТЕМЫ (слайдер на главной/текст/элементы верстки)
 
-* How to run the test suite
+## Следующий этап
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Перенос НОВОЙ верстки
